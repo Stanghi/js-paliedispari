@@ -22,7 +22,7 @@ function metodo1(){
                 // spiegazione
                 // console.log(parolaUtente[i]);
                 // console.log(parolaUtente[len - 1 - i]);
-                return '[Metodo 1] La parola non è palindroma';
+                return '[Metodo 1] La parola/frase non è palindroma';
             }
             // spiegazione
             //  else{
@@ -30,7 +30,7 @@ function metodo1(){
             //      console.log(parolaUtente[len - 1 - i]);
             //  }
         }
-        return '[Metodo 1] La parola è palindroma';
+        return '[Metodo 1] La parola/frase è palindroma';
     }
 }
 
@@ -38,10 +38,10 @@ function metodo2(){
     let parolaInversa = invertiParola( parolaUtente);
 
     if (parolaUtente == parolaInversa){
-        console.log('[Metodo 2] La parola è palindroma');
+        console.log('[Metodo 2] La parola/frase è palindroma');
     }
     else {
-        console.log('[Metodo 2] La parola non è palindroma');
+        console.log('[Metodo 2] La parola/frase non è palindroma');
     }
     
     function invertiParola(parolaUtente){
