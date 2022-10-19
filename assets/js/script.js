@@ -3,7 +3,7 @@ Palindroma:
 Chiedere all’utente di inserire una parola
 Creare una funzione per capire se la parola inserita è palindroma
 */
-console.log("---Palindroma---");
+console.log("---PALINDROMA---");
 
 const parola = prompt('Inserire una parola/frase per vedere se è palindroma');
 const parolaUtente = parola.toLowerCase().replace(/\s/g, '');
