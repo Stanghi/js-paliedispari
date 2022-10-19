@@ -5,8 +5,9 @@ Creare una funzione per capire se la parola inserita è palindroma
 */
 console.log("---Palindroma---");
 
-const parolaUtente = prompt('Inserire una parola per vedere se è palindroma');
-console.log("Parola inserita: ", parolaUtente);
+const parola = prompt('Inserire una parola/frase per vedere se è palindroma');
+const parolaUtente = parola.toLowerCase();
+console.log("Parola/frase inserita: ", parola);
 metodo1(parolaUtente);
 metodo2(parolaUtente);
 
@@ -24,10 +25,10 @@ function metodo1(){
                 return '[Metodo 1] La parola non è palindroma';
             }
             // spiegazione
-            // else{
-            //     console.log(parolaUtente[i]);
-            //     console.log(parolaUtente[len - 1 - i]);
-            // }
+            //  else{
+            //      console.log(parolaUtente[i]);
+            //      console.log(parolaUtente[len - 1 - i]);
+            //  }
         }
         return '[Metodo 1] La parola è palindroma';
     }
