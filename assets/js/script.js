@@ -5,19 +5,28 @@ Creare una funzione per capire se la parola inserita è palindroma
 */
 
 const parolaUtente = prompt('Inserire una parola');
+console.log("Parola inserita: ", parolaUtente);
 metodo1(parolaUtente);
 metodo2(parolaUtente);
 
 function metodo1(){
     const value = isPalindrome(parolaUtente);
     console.log(value);
-    
+
     function isPalindrome(parolaUtente){
         const len = parolaUtente.length;
         for (let i = 0; i < len / 2; i++) {
-            if (parolaUtente[i] !== parolaUtente[len - 1 - i]) {
+            if (parolaUtente[i] !== parolaUtente[len - 1 - i]){
+                // spiegazione
+                // console.log(parolaUtente[i]);
+                // console.log(parolaUtente[len - 1 - i]);
                 return '[Metodo 1] La parola non è palindroma';
             }
+            // spiegazione
+            // else{
+            //     console.log(parolaUtente[i]);
+            //     console.log(parolaUtente[len - 1 - i]);
+            // }
         }
         return '[Metodo 1] La parola è palindroma';
     }
