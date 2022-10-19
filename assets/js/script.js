@@ -6,7 +6,7 @@ Creare una funzione per capire se la parola inserita è palindroma
 console.log("---Palindroma---");
 
 const parola = prompt('Inserire una parola/frase per vedere se è palindroma');
-const parolaUtente = parola.toLowerCase();
+const parolaUtente = parola.toLowerCase().replace(/\s/g, '');;
 console.log("Parola/frase inserita: ", parola);
 metodo1(parolaUtente);
 metodo2(parolaUtente);
