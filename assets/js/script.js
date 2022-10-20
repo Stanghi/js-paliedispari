@@ -5,11 +5,11 @@ Creare una funzione per capire se la parola inserita è palindroma
 */
 console.log("---PALINDROMA---");
 
-const parola = prompt('Inserire una parola/frase per vedere se è palindroma');
+const parola = prompt('Inserire una parola/frase per vedere se è palindroma').trim();
 const parolaUtente = parola.toLowerCase().replace(/\s/g, '');
 console.log("Parola/frase inserita: ", parola);
-metodo1(parolaUtente);
-metodo2(parolaUtente);
+metodo1();
+metodo2();
 
 function metodo1(){
     const value = isPalindrome(parolaUtente);
@@ -35,7 +35,7 @@ function metodo1(){
 }
 
 function metodo2(){
-    let parolaInversa = invertiParola( parolaUtente);
+    let parolaInversa = invertiParola(parolaUtente);
 
     if (parolaUtente == parolaInversa){
         console.log('[Metodo 2] La parola/frase è palindroma');
@@ -113,7 +113,7 @@ function winnerCalculator(sum) {
 
 function checkWinner(sumWinnerOutput){
     if (sumWinnerOutput === userChoice){
-        console.log("USER VINCE");
+        console.log("UTENTE VINCE");
     }
     else {
         console.log("PC VINCE");
